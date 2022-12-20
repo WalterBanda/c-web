@@ -1,4 +1,4 @@
-<p align="center"><img src="public/marketing/thumbnail.png" alt="Thumbnail" style="zoom:25%;" /></p>
+<p align="center"><img src="public/marketing/og.png" alt="Thumbnail" style="zoom:25%;" /></p>
 
 # About
 
