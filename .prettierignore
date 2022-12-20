@@ -1,0 +1,12 @@
+# Project development directories and files
+node_modules
+.build/
+.next/
+node_modules/*
+
+# Actions & Configurations directories
+.github/*
+
+# Editor directories and files
+.vscode/*
+.idea/*
