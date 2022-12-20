@@ -1,5 +1,5 @@
 import Meta from '@ui/meta'
-import Splash from '@ui/slides'
+import { Splash } from '@ui/slides'
 import Background from 'components/background'
 
 function Home() {
