@@ -10,4 +10,10 @@ function Home() {
   )
 }
 
+function Page() {
+  return <div>
+    
+  </div>
+}
+
 export default Home
