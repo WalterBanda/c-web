@@ -1,18 +1,13 @@
+import Background from 'components/background'
 import Meta from 'components/meta'
-
-function Home() {
-  return (
-    <>
-      <main></main>
-    </>
-  )
-}
+import { Home } from 'components/slides'
 
 export default function Index() {
   return (
     <>
       <Meta />
       <Home />
+      <Background />
     </>
   )
 }
