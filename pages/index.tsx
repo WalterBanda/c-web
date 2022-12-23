@@ -1,10 +1,15 @@
 import Meta from 'components/meta'
+import { VscGithubInverted } from 'react-icons/vsc'
 
 function Home() {
   return (
-    <div>
+    <>
       <Meta />
-    </div>
+      <main>
+        <nav>
+        </nav>
+      </main>
+    </>
   )
 }
 
