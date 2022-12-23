@@ -1,16 +1,18 @@
 import Meta from 'components/meta'
-import { VscGithubInverted } from 'react-icons/vsc'
 
 function Home() {
   return (
     <>
-      <Meta />
-      <main>
-        <nav>
-        </nav>
-      </main>
+      <main></main>
     </>
   )
 }
 
-export default Home
+export default function Index() {
+  return (
+    <>
+      <Meta />
+      <Home />
+    </>
+  )
+}
