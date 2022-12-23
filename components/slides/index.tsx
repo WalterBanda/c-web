@@ -1,7 +1,15 @@
+function Hero() {
+  return (
+    <div>
+      <h1>Finding a good mechanic is hard.</h1>
+    </div>
+  )
+}
+
 export function Home() {
   return (
-    <main className='relative z-[20] w-screen h-screen'>
-      <h1>Finding a good mechanic is hard.</h1>
+    <main className='w-screen h-screen'>
+      <Hero />
     </main>
   )
 }
