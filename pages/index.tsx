@@ -1,4 +1,3 @@
-import Background from 'components/background'
 import Meta from 'components/meta'
 import { Home } from 'components/slides'
 
@@ -7,7 +6,6 @@ export default function Index() {
     <>
       <Meta />
       <Home />
-      <Background />
     </>
   )
 }

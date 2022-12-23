@@ -8,7 +8,7 @@ function Hero() {
 
 export function Home() {
   return (
-    <main className='w-screen h-screen'>
+    <main className=''>
       <Hero />
     </main>
   )
