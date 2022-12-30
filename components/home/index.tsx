@@ -3,9 +3,25 @@ import styles from './index.module.scss'
 import { VscGithubInverted } from 'react-icons/vsc'
 import Link from 'next/link'
 
+function Slide() {
+  return <div></div>
+}
+
+function Slide1() {
+  return <div></div>
+}
+
+function Slide2() {
+  return <div></div>
+}
+
+function Slide3() {
+  return <div></div>
+}
+
 function CTA() {
   return (
-    <div className='w-screen h-screen relative'>
+    <div>
       <h1>Finding a good mechanic is hard.</h1>
       <div>
         <p>
