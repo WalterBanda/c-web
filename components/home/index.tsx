@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.root}>
       <Link
         href='https://github.com/WalterBanda/chapchap-client'
-        className='absolute top-4 right-4 text-[1.5rem] text-[#202124]'
+        className='fixed top-4 right-4 text-[1.5rem] text-[#202124]'
       >
         <VscGithubInverted />
       </Link>
