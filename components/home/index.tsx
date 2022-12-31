@@ -1,4 +1,3 @@
-// eslint-disable react/no-unescaped-entities
 import styles from './index.module.scss'
 import { VscGithubInverted } from 'react-icons/vsc'
 import Link from 'next/link'
