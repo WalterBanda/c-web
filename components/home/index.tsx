@@ -2,69 +2,8 @@
 import styles from './index.module.scss'
 import { VscGithubInverted } from 'react-icons/vsc'
 import Link from 'next/link'
+import CTA from './slides'
 
-function Slide() {
-  return (
-    <div className={styles.slide}>
-      <h1>Finding a good mechanic is hard.</h1>
-    </div>
-  )
-}
-
-function Slide1() {
-  return (
-    <div className={styles.slide1}>
-      <div>
-        <p>
-          It's stressful, time-consuming, and sometimes downright impossible.
-        </p>
-        <p>
-          But don't worry - we've got you covered! Chapchap makes it easy to
-          find top-rated mechanics in your area.
-        </p>
-      </div>
-    </div>
-  )
-}
-
-function Slide2() {
-  return (
-    <div className={styles.slide2}>
-      <div>
-        <p>
-          Simply download the app, create your account and tada you connect with
-          great mechanics in your location.
-        </p>
-        <p>
-          If you are a mechanic, download the app and register as a garage to
-          get your services discovered.
-        </p>
-      </div>
-    </div>
-  )
-}
-
-function Slide3() {
-  return (
-    <div className={styles.slide3}>
-      <div>
-        <p>And great news, its Opensource</p>
-        <p>Get it now at</p>
-      </div>
-    </div>
-  )
-}
-
-function CTA() {
-  return (
-    <div>
-      <Slide />
-      <Slide1 />
-      <Slide2 />
-      <Slide3 />
-    </div>
-  )
-}
 
 export default function Home() {
   return (
