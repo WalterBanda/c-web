@@ -4,7 +4,6 @@ import { VscGithubInverted } from 'react-icons/vsc'
 import Link from 'next/link'
 import CTA from './slides'
 
-
 export default function Home() {
   return (
     <main className={styles.root}>
