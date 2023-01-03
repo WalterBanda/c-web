@@ -5,9 +5,13 @@
 .splash {
 
   @apply relative;
-  width: 20%;
-  height: 40%;
+  width: 30%;
+  height: 70%;
   & > img {
     object-fit: contain;
   }
+}
+
+.splash_hero {
+  @apply font-[700] text-[2.5rem];
 }
