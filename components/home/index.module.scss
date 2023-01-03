@@ -1,3 +1,13 @@
 .root {
   @apply w-full h-screen relative z-40;
 }
+
+.splash {
+
+  @apply relative;
+  width: 20%;
+  height: 40%;
+  & > img {
+    object-fit: contain;
+  }
+}
