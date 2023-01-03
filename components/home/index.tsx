@@ -1,9 +1,22 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from './index.module.scss'
 import { VscGithubInverted } from 'react-icons/vsc'
 import { FaGithub, FaGooglePlay } from 'react-icons/fa'
-import { SiAndroid } from 'react-icons/si'
+import { DiAndroid } from 'react-icons/di'
 import { FiGlobe } from 'react-icons/fi'
 import Link from 'next/link'
+import { DOMAttributes } from 'react'
+
+function MarketingLinks({ children }: DOMAttributes<never>) {
+  return (
+    <Link
+      href='#'
+      className='text-[1.5rem] text-white p-4 bg-black rounded-2xl'
+    >
+      {children}
+    </Link>
+  )
+}
 
 function SlideText() {
   return (
@@ -32,19 +45,19 @@ function SlideText() {
         <p>And great news, its Opensource</p>
         <p>Get it now at</p>
       </div>
-      <div>
-        <Link href='#'>
+      <div className='flex flex-row items-center justify-center gap-10'>
+        <MarketingLinks>
           <FaGooglePlay />
-        </Link>
-        <Link href='#'>
+        </MarketingLinks>
+        <MarketingLinks>
           <FaGithub />
-        </Link>
-        <Link href='#'>
-          <SiAndroid />
-        </Link>
-        <Link href='#'>
+        </MarketingLinks>
+        <MarketingLinks>
+          <DiAndroid />
+        </MarketingLinks>
+        <MarketingLinks>
           <FiGlobe />
-        </Link>
+        </MarketingLinks>
       </div>
     </div>
   )
