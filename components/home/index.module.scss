@@ -12,6 +12,6 @@
   }
 }
 
-.splash_hero {
-  @apply font-[700] text-[2.5rem];
+.cta_text {
+  @apply text-2xl md:text-3xl font-bold;
 }

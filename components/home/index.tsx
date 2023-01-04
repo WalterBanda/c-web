@@ -32,29 +32,29 @@ function MarketingLinks({
 function SlideText() {
   return (
     <div>
-      <p>Finding a good mechanic is hard.</p>
+      <p className={styles.cta_text}>Finding a good mechanic is hard.</p>
       <div>
-        <p>
+        <p className={styles.cta_text}>
           It's stressful, time-consuming, and sometimes downright impossible.
         </p>
-        <p>
+        <p className={styles.cta_text}>
           But don't worry - we've got you covered! Chapchap makes it easy to
           find top-rated mechanics in your area.
         </p>
       </div>
       <div>
-        <p>
+        <p className={styles.cta_text}>
           Simply download the app, create your account and tada you connect with
           great mechanics in your location.
         </p>
-        <p>
+        <p className={styles.cta_text}>
           If you are a mechanic, download the app and register as a garage to
           get your services discovered.
         </p>
       </div>
       <div>
-        <p>And great news, its Opensource</p>
-        <p>Get it now at</p>
+        <p className={styles.cta_text}>And great news, its Opensource</p>
+        <p className={styles.cta_text}>Get it now at</p>
       </div>
       <div className='flex flex-row items-center justify-center gap-5 md:gap-10'>
         <MarketingLinks icon={FaGooglePlay} href='#' linkName='playstore' />
