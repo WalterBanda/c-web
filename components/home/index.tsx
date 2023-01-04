@@ -32,8 +32,11 @@ function MarketingLinks({
 function SlideText() {
   return (
     <div>
-      <p className={styles.cta_text}>Finding a good mechanic is hard.</p>
-      <div>
+      <div className={styles.slide}>
+        <p className={styles.cta_text}>Finding a good mechanic is hard.</p>
+      </div>
+      {/* Slide 1 */}
+      <div className={styles.slide1}>
         <p className={styles.cta_text}>
           It's stressful, time-consuming, and sometimes downright impossible.
         </p>
@@ -42,7 +45,8 @@ function SlideText() {
           find top-rated mechanics in your area.
         </p>
       </div>
-      <div>
+      {/* Slide 2  */}
+      <div className={styles.slide2}>
         <p className={styles.cta_text}>
           Simply download the app, create your account and tada you connect with
           great mechanics in your location.
@@ -52,15 +56,18 @@ function SlideText() {
           get your services discovered.
         </p>
       </div>
-      <div>
-        <p className={styles.cta_text}>And great news, its Opensource</p>
-        <p className={styles.cta_text}>Get it now at</p>
-      </div>
-      <div className='flex flex-row items-center justify-center gap-5 md:gap-10'>
-        <MarketingLinks icon={FaGooglePlay} href='#' linkName='playstore' />
-        <MarketingLinks icon={FaGithub} href='#' linkName='github' />
-        <MarketingLinks icon={DiAndroid} href='#' linkName='android apk' />
-        <MarketingLinks icon={FiGlobe} href='#' linkName='website' />
+      {/* Slide 3  */}
+      <div className={styles.slide3}>
+        <div>
+          <p className={styles.cta_text}>And great news, its Opensource</p>
+          <p className={styles.cta_text}>Get it now at</p>
+        </div>
+        <div className='flex flex-row items-center justify-center gap-5 md:gap-10'>
+          <MarketingLinks icon={FaGooglePlay} href='#' linkName='playstore' />
+          <MarketingLinks icon={FaGithub} href='#' linkName='github' />
+          <MarketingLinks icon={DiAndroid} href='#' linkName='android apk' />
+          <MarketingLinks icon={FiGlobe} href='#' linkName='website' />
+        </div>
       </div>
     </div>
   )

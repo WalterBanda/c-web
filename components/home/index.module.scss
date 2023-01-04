@@ -3,7 +3,6 @@
 }
 
 .splash {
-
   @apply relative;
   width: 30%;
   height: 70%;
@@ -13,5 +12,33 @@
 }
 
 .cta_text {
-  @apply text-2xl md:text-3xl font-bold;
+  @apply text-4xl text-center md:text-4xl font-bold;
+}
+
+/** Sizing for all slides */
+@mixin mslide {
+  @apply w-full h-screen relative;
+}
+
+.slide {
+  @include mslide();
+
+  & > p {
+    @apply absolute transition-all;
+
+    @media (max-width: 767px) {
+      @apply top-[35%] left-0 right-0 m-auto w-[80%];
+    }
+
+    @apply top-[40%] left-[20%] w-fit;
+  }
+}
+.slide1 {
+  @include mslide();
+}
+.slide2 {
+  @include mslide();
+}
+.slide3 {
+  @include mslide();
 }
