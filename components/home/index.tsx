@@ -49,14 +49,16 @@ function SlideText() {
       </div>
       {/* Slide 2  */}
       <div className={styles.slide2}>
-        <p className={styles.cta_text}>
-          Simply download the app, create your account and tada you connect with
-          great mechanics in your location.
-        </p>
-        <p className={styles.cta_text}>
-          If you are a mechanic, download the app and register as a garage to
-          get your services discovered.
-        </p>
+        <main>
+          <p className={styles.cta_text}>
+            Simply download the app, create your account and tada you connect
+            with great mechanics in your location.
+          </p>
+          <p className={styles.cta_text}>
+            If you are a mechanic, download the app and register as a garage to
+            get your services discovered.
+          </p>
+        </main>
       </div>
       {/* Slide 3  */}
       <div className={styles.slide3}>
