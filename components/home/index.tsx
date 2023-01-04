@@ -17,7 +17,10 @@ function MarketingLinks({
   linkName: string
 }) {
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+      className='flex flex-col items-center justify-center gap-1'
+    >
       <div className='w-[3.75rem] h-[3.75rem] text-[1.5rem] flex flex-col items-center justify-center text-white bg-black rounded-2xl'>
         <Icon />
       </div>
