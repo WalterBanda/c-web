@@ -37,13 +37,15 @@ function SlideText() {
       </div>
       {/* Slide 1 */}
       <div className={styles.slide1}>
-        <p className={styles.cta_text}>
-          It's stressful, time-consuming, and sometimes downright impossible.
-        </p>
-        <p className={styles.cta_text}>
-          But don't worry - we've got you covered! Chapchap makes it easy to
-          find top-rated mechanics in your area.
-        </p>
+        <main>
+          <p className={styles.cta_text}>
+            It's stressful, time-consuming, and sometimes downright impossible.
+          </p>
+          <p className={styles.cta_text}>
+            But don't worry - we've got you covered! Chapchap makes it easy to
+            find top-rated mechanics in your area.
+          </p>
+        </main>
       </div>
       {/* Slide 2  */}
       <div className={styles.slide2}>
