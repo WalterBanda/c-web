@@ -5,15 +5,23 @@ import { FaGithub, FaGooglePlay } from 'react-icons/fa'
 import { DiAndroid } from 'react-icons/di'
 import { FiGlobe } from 'react-icons/fi'
 import Link from 'next/link'
-import { DOMAttributes } from 'react'
+import { IconType } from 'react-icons'
 
-function MarketingLinks({ children }: DOMAttributes<never>) {
+function MarketingLinks({
+  icon: Icon,
+  href,
+  linkName
+}: {
+  icon: IconType
+  href: string
+  linkName: string
+}) {
   return (
-    <Link
-      href='#'
-      className='text-[1.5rem] text-white p-4 bg-black rounded-2xl'
-    >
-      {children}
+    <Link href={href}>
+      <div className='w-[3.75rem] h-[3.75rem] text-[1.5rem] flex flex-col items-center justify-center text-white bg-black rounded-2xl'>
+        <Icon />
+      </div>
+      <p>{linkName}</p>
     </Link>
   )
 }
@@ -45,19 +53,11 @@ function SlideText() {
         <p>And great news, its Opensource</p>
         <p>Get it now at</p>
       </div>
-      <div className='flex flex-row items-center justify-center gap-10'>
-        <MarketingLinks>
-          <FaGooglePlay />
-        </MarketingLinks>
-        <MarketingLinks>
-          <FaGithub />
-        </MarketingLinks>
-        <MarketingLinks>
-          <DiAndroid />
-        </MarketingLinks>
-        <MarketingLinks>
-          <FiGlobe />
-        </MarketingLinks>
+      <div className='flex flex-row items-center justify-center gap-5 md:gap-10'>
+        <MarketingLinks icon={FaGooglePlay} href='#' linkName='playstore' />
+        <MarketingLinks icon={FaGithub} href='#' linkName='github' />
+        <MarketingLinks icon={DiAndroid} href='#' linkName='android apk' />
+        <MarketingLinks icon={FiGlobe} href='#' linkName='website' />
       </div>
     </div>
   )
