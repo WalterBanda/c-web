@@ -33,27 +33,33 @@
     @apply top-[40%] left-[20%] w-fit;
   }
 }
+
 .slide1 {
   @include mslide();
+
+  @apply flex flex-col items-center justify-center;
+
   & > main {
-    @apply absolute top-0 right-0 left-0 bottom-0 m-auto;
-    @apply flex flex-col gap-10 w-[55%];
+    @apply flex flex-col gap-10 md:w-[55%];
   }
   p {
     @apply text-start;
   }
 }
+
 .slide2 {
   @include mslide();
 
+  @apply flex flex-col items-center justify-center;
+
   & > main {
-    @apply absolute top-0 right-0 left-0 bottom-0 m-auto;
-    @apply flex flex-col gap-10 w-[55%];
+    @apply flex flex-col gap-10 md:w-[55%];
   }
   p {
     @apply text-start;
   }
 }
+
 .slide3 {
   @include mslide();
 
