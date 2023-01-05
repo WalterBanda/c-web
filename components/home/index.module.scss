@@ -2,43 +2,14 @@
   @apply w-full h-screen relative z-40;
 }
 
-.splash {
-  @apply relative;
-  width: 30%;
-  height: 70%;
-  & > img {
-    object-fit: contain;
-  }
-}
-
 .cta_text {
   @apply text-4xl text-center md:text-4xl font-bold;
 }
 
-/** Sizing for all slides */
-@mixin mslide {
-  @apply w-full h-screen relative;
-}
-
 .slide {
-  @include mslide();
-
-  & > p {
-    @apply absolute transition-all;
-
-    @media (max-width: 767px) {
-      @apply top-[35%] left-0 right-0 m-auto w-[80%];
-    }
-
-    @apply top-[40%] left-[20%] w-fit;
-  }
 }
 
 .slide1 {
-  @include mslide();
-
-  @apply flex flex-col items-center justify-center;
-
   & > main {
     @apply flex flex-col gap-10 md:w-[55%];
   }
@@ -48,10 +19,6 @@
 }
 
 .slide2 {
-  @include mslide();
-
-  @apply flex flex-col items-center justify-center;
-
   & > main {
     @apply flex flex-col gap-10 md:w-[55%];
   }
@@ -61,7 +28,7 @@
 }
 
 .slide3 {
-  @include mslide();
-
-  @apply flex flex-col items-center justify-center gap-6;
+  & > main {
+    @apply flex flex-col gap-6;
+  }
 }

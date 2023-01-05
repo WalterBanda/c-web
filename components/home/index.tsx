@@ -62,16 +62,18 @@ function SlideText() {
       </div>
       {/* Slide 3  */}
       <div className={styles.slide3}>
-        <div>
-          <p className={styles.cta_text}>And great news, its Opensource</p>
-          <p className={styles.cta_text}>Get it now at</p>
-        </div>
-        <div className='flex flex-row items-center justify-center gap-5 md:gap-10'>
-          <MarketingLinks icon={FaGooglePlay} href='#' linkName='playstore' />
-          <MarketingLinks icon={FaGithub} href='#' linkName='github' />
-          <MarketingLinks icon={DiAndroid} href='#' linkName='android apk' />
-          <MarketingLinks icon={FiGlobe} href='#' linkName='website' />
-        </div>
+        <main>
+          <div>
+            <p className={styles.cta_text}>And great news, its Opensource</p>
+            <p className={styles.cta_text}>Get it now at</p>
+          </div>
+          <div className='flex flex-row items-center justify-center gap-5 md:gap-10'>
+            <MarketingLinks icon={FaGooglePlay} href='#' linkName='playstore' />
+            <MarketingLinks icon={FaGithub} href='#' linkName='github' />
+            <MarketingLinks icon={DiAndroid} href='#' linkName='android apk' />
+            <MarketingLinks icon={FiGlobe} href='#' linkName='website' />
+          </div>
+        </main>
       </div>
     </div>
   )
